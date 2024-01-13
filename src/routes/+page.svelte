@@ -1,7 +1,18 @@
 <script lang="ts">
+    import { onMount } from "svelte";
+
+    let disable: Boolean = false;
+
     function relocate () {
         window.location.href = '/generateGraph';
     }
+
+    onMount(() => {
+        const mediaQuery = window.matchMedia('(min-width: 768px)')
+        if (!mediaQuery.matches) {
+            disable = true
+        }
+    })
 </script>
 
 <div id="title">
@@ -22,13 +33,16 @@
             <li>If the edges do not render, also just refresh the page</li>
             <li>Press E to able/disable edges between the nodes</li>
             <li>Press T to able/disable the names of all nodes</li>
+            <li>Optimal use on laptops/desktops only.</li>
         </ul>
     </div>
 </div>
 
-<button on:click={relocate}>
-    + Generate Graph
-</button>
+{#if !disable}
+    <button on:click={relocate}>
+        + Generate Graph
+    </button>
+{/if}
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Marhey&display=swap');
@@ -76,11 +90,11 @@
         color: white;
         border: 2px solid white;
         border-radius: 10px;
-        padding: 2%;
+        padding: 1%;
         text-align: center;
     }
     #title {
-        margin-top: 4%;
+        margin-top: 2%;
         text-align: center;
     }
 </style>
