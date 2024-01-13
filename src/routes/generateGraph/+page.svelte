@@ -19,42 +19,6 @@
     let selectedNode: string;
     let showEdges: Boolean = true;
     let detectSelect: Boolean = false;
-    let mathTree = {
-        GroupTheory: ["SymmetryGroups", "PermutationGroups", "MatrixGroups", "RingTheory"],
-        RingTheory: ["IdealTheory", "Factorization", "QuotientRings", "FieldTheory", "GroupTheory"],
-        LinearAlgebra: ["VectorSpaces", "LinearTransformations", "CanonicalForms", "MultilinearAlgebra"],
-        MultilinearAlgebra: ["ExteriorAlgebra", "CliffordAlgebras", "GrassmannAlgebra", "LinearAlgebra"],
-        RealAnalysis: ["SequenceAndSeries", "Continuity", "Differentiation", "ComplexAnalysis"],
-        ComplexAnalysis: ["HolomorphicFunctions", "ContourIntegrals", "Singularities", "RealAnalysis"],
-        FunctionalAnalysis: ["BanachSpaces", "BoundedLinearOperators", "SpectralTheory", "HarmonicAnalysis"],
-        HarmonicAnalysis: ["FourierSeries", "WaveletAnalysis", "SignalProcessing", "FunctionalAnalysis"],
-        DifferentialEquations: ["FirstOrderEquations", "HigherOrderEquations", "SystemsOfEquations", "DynamicalSystems"],
-        AlgebraicGeometry: ["ClassicalAlgebraicGeometry", "SchemeTheory", "AlgebraicCurves", "DifferentialGeometry"],
-        DifferentialGeometry: ["Manifolds", "Connections", "Curvature", "AlgebraicGeometry"],
-        Topology: ["PointSetTopology", "AlgebraicTopology", "LowDimensionalTopology", "AlgebraicGeometry"],
-        DynamicalSystems: ["ChaosTheory", "ErgodicTheory", "HyperbolicSystems", "DifferentialEquations"],
-        Combinatorics: ["EnumerativeCombinatorics", "ExtremalCombinatorics", "ProbabilisticMethod", "GraphTheory"],
-        GraphTheory: ["Matchings", "Colorings", "NetworkFlows", "Combinatorics"],
-        NumberTheory: ["ModularArithmetic", "AnalyticNumberTheory", "AlgebraicNumberTheory", "FieldTheory"],
-        SetTheory: ["CardinalNumbers", "OrdinalNumbers", "AxiomOfChoice", "MathematicalLogic"],
-        MathematicalLogic: ["FirstOrderLogic", "IncompletenessTheorems", "ModelTheory", "SetTheory"],
-        CategoryTheory: ["Functors", "NaturalTransformations", "Adjoints", "MathematicalLogic"],
-        NumericalAnalysis: ["Interpolation", "NumericalIntegration", "Approximation Theory", "Optimization"],
-        Optimization: ["LinearProgramming", "NonlinearProgramming", "IntegerProgramming", "NumericalAnalysis"],
-        OperationsResearch: ["QueueingTheory", "Scheduling", "InventoryControl", "ProbabilityTheory"],
-        ProbabilityTheory: ["StochasticProcesses", "Martingales", "LargeDeviations", "OperationsResearch"],
-        MathematicalStatistics: ["EstimationTheory", "HypothesisTesting", "ExperimentalDesign", "ProbabilityTheory"],
-        MathematicalFinance: ["AssetPricing", "ComputationalFinance", "RiskManagement", "ProbabilityTheory"],
-        MathematicalPhysics: ["ClassicalMechanics", "QuantumMechanics", "GeneralRelativity", "DifferentialEquations"],
-        MathematicalBiology: ["Modeling", "DynamicalSystems", "Bioinformatics", "DynamicalSystems"],
-        GameTheory: ["DecisionTheory", "Equilibria", "EvolutionaryGameTheory", "Optimization"],
-        InformationTheory: ["DataCompression", "ChannelCoding", "RateDistortionTheory", "ProbabilityTheory"],
-        Fractals: ["IteratedFunctionSystems", "Multifractals", "Chaos", "DynamicalSystems"],
-        Computability: ["RecursiveFunctions", "TuringMachines", "Undecidability", "MathematicalLogic"],
-        DataScience: ["DimensionalityReduction", "Clustering", "SupportVectorMachines", "MachineLearning"],
-        MachineLearning: ["SupervisedLearning", "UnsupervisedLearning", "ReinforcementLearning", "DataScience"],
-        FieldTheory: ["AlgebraicExtensions", "GaloisTheory", "TranscendentalExtensions", "RingTheory"]
-    };
 
     function showNote (title) {
         new Notes ({
@@ -235,7 +199,7 @@
         }
 
         p5.setup = () => {
-            p5.createCanvas(1145, 859);
+            p5.createCanvas(1145, 870);
             
             stateSpace = new Graph(false);
             
