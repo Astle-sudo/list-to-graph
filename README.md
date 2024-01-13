@@ -1,4 +1,5 @@
 # List-to-Graph
+Convert any notes/lists into graphs!
 Some stills from the app :
 
 <img width="578" alt="Screenshot 1945-10-22 at 11 57 18 PM" src="https://github.com/Astle-sudo/list-to-graph/assets/67687557/4625d42c-d6f1-4036-8f2d-77f49ca40d94">
