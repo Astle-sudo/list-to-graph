@@ -199,7 +199,7 @@
         }
 
         p5.setup = () => {
-            p5.createCanvas(1145, 900);
+            p5.createCanvas(1145, 880);
             
             stateSpace = new Graph(false);
             
