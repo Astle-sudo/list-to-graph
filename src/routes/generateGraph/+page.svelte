@@ -199,7 +199,7 @@
         }
 
         p5.setup = () => {
-            p5.createCanvas(1150, 898);
+            p5.createCanvas(1150, 900);
             
             stateSpace = new Graph(false);
             
@@ -283,6 +283,7 @@
 <style>
     :global(body) {
         background-image: url('/images/Screenshot 1945-10-22 at 7.03.26 AM.png');
+        overflow-y: no-scroll;
     }
     h4 {
         width: fit-content;
