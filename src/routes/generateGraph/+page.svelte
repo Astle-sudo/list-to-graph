@@ -323,7 +323,7 @@
         border-radius: 10px;
         height: 60vh;
         width: 15vw;
-        margin-top: 20vh;
+        margin-top: 15vh;
         overflow-y: scroll;
         box-shadow: 1px 1px 1px 1px white;
         color: white;
